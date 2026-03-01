@@ -59,7 +59,7 @@ export default function AdminLoginPage() {
                                     name="email"
                                     required
                                     placeholder="admin@company.com"
-                                    className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                    className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-slate-900 bg-white"
                                 />
                             </div>
                         </div>
@@ -75,7 +75,7 @@ export default function AdminLoginPage() {
                                     name="password"
                                     required
                                     placeholder="••••••••"
-                                    className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                    className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-slate-900 bg-white"
                                 />
                             </div>
                         </div>

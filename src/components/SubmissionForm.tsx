@@ -77,13 +77,13 @@ export default function SubmissionForm({ metrics }: SubmissionFormProps) {
                 <div className="space-y-2">
                     <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">First Name</label>
                     <input type="text" name="firstName" id="firstName" required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-slate-900 bg-white"
                         placeholder="Jane" />
                 </div>
                 <div className="space-y-2">
                     <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">Last Name</label>
                     <input type="text" name="lastName" id="lastName" required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-slate-900 bg-white"
                         placeholder="Doe" />
                 </div>
             </div>
@@ -91,7 +91,7 @@ export default function SubmissionForm({ metrics }: SubmissionFormProps) {
             <div className="space-y-2">
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
                 <input type="email" name="email" id="email" required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-slate-900 bg-white"
                     placeholder="jane.doe@company.com" />
             </div>
 
@@ -99,7 +99,7 @@ export default function SubmissionForm({ metrics }: SubmissionFormProps) {
                 <div className="space-y-2">
                     <label htmlFor="department" className="block text-sm font-medium text-gray-700">Department</label>
                     <select name="department" id="department" required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all bg-white">
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all bg-white text-slate-900">
                         <option value="">Select Department</option>
                         <option value="ogv">ogv</option>
                         <option value="icx">icx</option>
@@ -114,7 +114,7 @@ export default function SubmissionForm({ metrics }: SubmissionFormProps) {
                 <div className="space-y-2">
                     <label htmlFor="position" className="block text-sm font-medium text-gray-700">Position</label>
                     <input type="text" name="position" id="position" required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-slate-900 bg-white"
                         placeholder="" />
                 </div>
             </div>
@@ -122,7 +122,7 @@ export default function SubmissionForm({ metrics }: SubmissionFormProps) {
             <div className="space-y-2">
                 <label htmlFor="metricTypeId" className="block text-sm font-medium text-gray-700">Metric Type / Activity</label>
                 <select name="metricTypeId" id="metricTypeId" required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all bg-white">
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all bg-white text-slate-900">
                     <option value="">Select Metric</option>
                     {metrics.map((m) => (
                         <option key={m.id} value={m.id}>
