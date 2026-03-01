@@ -18,10 +18,10 @@ envContents.split('\n').forEach(line => {
 const supabaseAdmin = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY);
 
 async function createAdmin() {
-    console.log('Creating second admin...');
+    console.log('Creating second admin (ineshamdoun@gmail.com)...');
     const { data: authData, error: authError } = await supabaseAdmin.auth.admin.createUser({
-        email: 'admin2@company.com',
-        password: 'password123',
+        email: 'ineshamdoun@gmail.com',
+        password: 'ines123',
         email_confirm: true
     });
 
@@ -32,13 +32,13 @@ async function createAdmin() {
     }
 
     const { error: profileError } = await supabaseAdmin.from('admin_profiles').insert([
-        { id: authData.user.id, email: 'admin2@company.com' }
+        { id: authData.user.id, email: 'ineshamdoun@gmail.com' }
     ]);
 
     if (profileError) {
         console.error('Error creating profile:', profileError);
     } else {
-        console.log('Admin 2 created successfully!');
+        console.log('Admin ineshamdoun@gmail.com created successfully!');
     }
 }
 
